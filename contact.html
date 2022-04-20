@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awsome-->
+    <script src="https://kit.fontawesome.com/a5a42482b5.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!--Navbar Start-->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="./assets/img/logo.png" alt="Logo Dumbways" width="50px" />
+        </a>
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">My Project</a></li>
+        </ol>
+      </div>
+      <div class="right-side">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!--Navbar END-->
+
+    <!--CONTENT START-->
+    <div class="form-contact">
+      <div class="container-form">
+        <div class="title">
+          <h1>GET IN TOUCH</h1>
+        </div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="number" />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option hidden></option>
+              <option value="Lets Talk">Lets Talk</option>
+              <option value="Lets Collaboration">Lets Collaboration</option>
+              <option value="Iam Hiring">Iam Hiring</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <button type="button" onclick="sendEmail()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- CONTENT END-->
+
+    <script src="contact.js"></script>
+  </body>
+</html>
